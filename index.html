@@ -18,7 +18,7 @@
 <body>
 
         <!-- Page Content -->
-<div class="container">
+<div>
 <!-- Marketing Icons Section -->
 <div class="row">
 		<h1 class="text-center"><b>First Order Motion Model for Image Animation</b></h1>
@@ -43,8 +43,8 @@
 </div>
     <br/>
 
-    <div class="col-xs-12 col-md-8 col-md-8 col-sm-12 col-md-offset-2 col-lg-offset-2">
-        <img class="img-responsive" src="teaser.png" style="max-width:100%;max-height:100%;"
+    <div class="col-xs-12 col-md-8 col-md-8 col-sm-12 col-md-offset-2 col-lg-offset-2" align="center">
+        <img class="img-responsive" src="teaser.png" style="max-width:70%;max-height:70%"
                     alt="Example animations produced by our method trained on different datasets. We use relative motion transfer for
                          VoxCeleb and Fashion-Videos and absolute transfer for MGif and Tai-Chi-HD"/>
     </div>
@@ -65,7 +65,7 @@
 <div class="row">
 <div class="col-md-8 col-md-8 col-sm-12 col-md-offset-2 col-lg-offset-2 text-justify">
 <h2 class="page-header">How does it work?</h2>
-<div><img class="img-responsive" src="pipeline.png" alt="A schematic representation of the proposed motion transfer framework for image animation"/></div>
+<div align="center"><img  style="max-width:70%;max-height:70%" class="img-responsive" src="pipeline.png" alt="A schematic representation of the proposed motion transfer framework for image animation"/></div>
 
 <br/>
     <p>For training, we employ a large collection of video sequences containing objects of the same object category. Our model is trained to reconstruct the training videos by combining a single frame and a learned latent representation of the motion in the video. Observing frame pairs (<i>source</i> and <i>driving</i>), each extracted from the same video, it learns to encode motion as a combination of motion-specific keypoint displacements and local affine transformations. At test time we apply our model to pairs composed of the source image and of each frame of the driving video and perform image animation of the source object.
@@ -85,6 +85,27 @@ During the second step, a dense motion network combines the local approximations
     </p>
 </div> </div>
 
+
+    <div class="row">
+	<div class="col-xs-12 col-md-8 col-md-8 col-sm-12 col-md-offset-2 col-lg-offset-2">
+	<h2 class="page-header">Animation results</h2>
+        <div align="center">
+                <img class="img-responsive" src="vox-teaser.gif" style="max-width:70%;max-height:70%"/>
+                <img class="img-responsive" src="fashion-teaser.gif" style="max-width:70%;max-height:70%"/>
+                <img class="img-responsive" src="mgif-teaser.gif" style="max-width:70%;max-height:70%"/></div>
+	</div>
+
+</div>
+
+
+        <div class="row">
+	<div class="col-xs-12 col-md-8 col-md-8 col-sm-12 col-md-offset-2 col-lg-offset-2">
+	<h2 class="page-header">Face-swap results</h2>
+        <div align="center">
+                <img class="img-responsive" src="face-swap.gif" style="max-width:70%;max-height:70%"/></div>
+	</div>
+
+</div>
 
 <div class="row">
 	<div class="col-xs-12 col-md-8 col-md-8 col-sm-12 col-md-offset-2 col-lg-offset-2">
