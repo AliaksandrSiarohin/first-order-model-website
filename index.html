@@ -1,119 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>CVPR 2016</title>
+        <meta charset="utf-8"/>
+        <title>First order model</title>
         <!-- Bootstrap Core CSS -->
-        <link href="../css/bootstrap.min.css" rel="stylesheet" />
-        <link href="../css/bootstrap-social.css" rel="stylesheet" />
-        <link href="../css/custom.css" rel="stylesheet" />
+         <link href="css/bootstrap.min.css" rel="stylesheet" />
+        <link href="css/bootstrap-social.css" rel="stylesheet" />
+        <link href="css/custom.css" rel="stylesheet" />
         <!-- Custom CSS -->
-        <link href="../css/modern-business.css" rel="stylesheet" />
+        <link href="css/modern-business.css" rel="stylesheet" />
         <!-- Custom Fonts -->
-        <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
 		
-		<script src="../js/jquery.js"></script>
-		<script src="../js/bootstrap.min.js"></script>
+		<script src="js/jquery.js"></script>
+		<script src="js/bootstrap.min.js"></script>
     </head>
-    <body>
+<body>
+
         <!-- Page Content -->
-        <div class="container">
-            <!-- Marketing Icons Section -->
-            <div class="row">
-                <h1 class="text-center">Self-Adaptive Matrix Completion for Heart Rate Estimation from Face Videos under Realistic Conditions</h1>
-				<h3 class="text-center">Sergey Tulyakov, Xavier Alameda Pineda, Elisa Ricci, Lijun Yin, Jeffrey Cohn and Nicu Sebe</h3>
-				<h2 class="text-center">Abstract</h2>
-				
-				<div class="col-md-8 col-md-8 col-sm-12 col-md-offset-2 col-lg-offset-2 text-justify">
-   This paper introduces a novel deep learning framework for image animation. Given an input image with a target object and a driving video sequence depicting a moving object, our framework generates a video in which the target object is <i>animated</i> according to the driving sequence. This is achieved through a deep architecture that decouples appearance and motion information. Our framework consists of three main modules: (i) a Keypoint Detector unsupervisely trained to extract object keypoints, (ii) a Dense Motion prediction network for generating dense heatmaps from sparse keypoints, in order to better encode motion information and (iii) a Motion Transfer Network, which uses the motion heatmaps and appearance information extracted from the input image to synthesize the output frames. We demonstrate the effectiveness of our method on several benchmark datasets, spanning a wide variety of object appearances, and show that our approach outperforms state-of-the-art image animation and video generation methods.
-				</div>
-            </div>
-            <div class="row">
-				
-                <div class="col-xs-12 col-md-8 col-md-8 col-sm-12 col-md-offset-2 col-lg-offset-2">
-                			<h2 class="page-header">Spotlight video</h2>
-                            <div class="embed-responsive embed-responsive-16by9">
-                                <iframe src="https://www.youtube.com/embed/9JNkSZJuDJ8" frameborder="0" allowfullscreen></iframe>
-                            </div>  
-							<h2 class="page-header">Citation</h2>
-							<div>
-								<div class="col-md-3 col-sm-3 col-xs-3">
-									<img class="img-responsive img-rounded" src="../images/cvpr-2016.jpg" alt="" />
-								</div>
-							
-								<div>
-								<p><strong>
-									Self-Adaptive Matrix Completion for Heart Rate Estimation from Face Videos under Realistic Conditions
-								</strong></p>
-								<p>Sergey Tulyakov, Xavier Alameda Pineda, Elisa Ricci, Lijun Yin, Jeffrey Cohn and Nicu Sebe</p>
-								<p class="col-lg-offset-3"><em>Computer Vision and Pattern Recognition, 2016</em></p>
-								<br/>	
-								<div class="col-lg-4 col-sm-3 col-md-3 col-xs-3">
-									<a href="http://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Tulyakov_Self-Adaptive_Matrix_Completion_CVPR_2016_paper.pdf">
-										<img class="img-responsive img-rounded img-thumbnail" src="../images/cvpr-front.jpg" alt="paper" height="100" />
-									</a>
-								</div>
+<div class="container">
+<!-- Marketing Icons Section -->
+<div class="row">
+		<h1 class="text-center"><b>First Order Motion Model for Image Animation</b></h1>
+		<h3 class="text-center"><i> Aliaksandr Siarohin, Stéphane Lathuilière, Sergey Tulyakov, Elisa Ricci and Nicu Sebe</i></h3>
+		<h4 class="text-center"> in NeurIPS 2019 </h4>
 
-								<div class="col-lg-4 col-sm-3 col-md-3 col-xs-3">
-									<a href="https://github.com/sergeytulyakov/sergeytulyakov.github.io/raw/master/data/hr-cvpr.pdf">
-										<img class="img-responsive img-rounded img-thumbnail" src="../images/cvpr-presentation.png" alt="presentation" height="100"/>
-									</a>
-								</div>
+</div>
+    <div class="row">
+	<table align=center width=300px>
+		<tr>
+		<td align=center width=50px>
+		<center>
+            <span style="font-size:24px"><a href='http://papers.nips.cc/paper/8935-first-order-motion-model-for-image-animation'>[Paper]</a></span>
+		</center>
+		</td>
+		<td align=center width=50px>
+		<center>
+			<span style="font-size:24px"><a href='https://github.com/AliaksandrSiarohin/first-order-model'>[GitHub]</a></span>
+		</center>
+		</td>
+	</table>
+</div>
+    <br/>
+
+    <div class="col-xs-12 col-md-8 col-md-8 col-sm-12 col-md-offset-2 col-lg-offset-2">
+        <img class="img-responsive" src="teaser.png" style="max-width:100%;max-height:100%;"
+                    alt="Example animations produced by our method trained on different datasets. We use relative motion transfer for
+                         VoxCeleb and Fashion-Videos and absolute transfer for MGif and Tai-Chi-HD"/>
+    </div>
 
 
-								<div class="col-lg-4 col-sm-3 col-md-3 col-xs-3">
-									<a href="https://github.com/sergeytulyakov/sergeytulyakov.github.io/raw/master/data/cvpr-poster.pdf">
-										<img class="img-responsive img-rounded img-thumbnail" src="../images/cvpr-poster.jpg" alt="poster" height="100"/>
-									</a>
-								</div>
-							
-								</div>
-								
-							</div>
-							
-					</div>  
-				
-						
-            </div>
+    <div class="col-md-8 col-md-8 col-sm-12 col-md-offset-2 col-lg-offset-2 text-justify">
+            <h2 class="text-center">Abstract</h2>
+            Image animation consists of generating a video sequence so that an object in a source image is animated according to the motion of a driving video.
+            Our framework addresses this problem without using any annotation or prior information about the specific object to animate.  Once trained on a set of videos depicting
+            objects of the same category (<i>e.g.</i> faces, human bodies), our method can be applied to any object of this class. To achieve this, we decouple appearance and motion
+            information using a self-supervised formulation.  To support complex motions, we use a representation consisting of a set of learned keypoints along with their
+            local affine transformations. A generator network models occlusions arising during target motions and combines the appearance extracted from the source image and
+            the motion derived from the driving video. Our framework scores best on diverse benchmarks and on a variety of object categories
+    </div>
 
-			
-			
 
-            <div class="row">
-				
-                <div class="col-xs-12 col-md-8 col-md-8 col-sm-12 col-md-offset-2 col-lg-offset-2">
-                	<h2 class="page-header">Data</h2>
-					<p>
-						We report experiments on the newly acquired Multimodal Spontaneous Emotion (MMSE) dataset. In order to obtain the MMSE please contact <a href="http://www.cs.binghamton.edu/~lijun/">Dr. Lijun Yin</a> 
-					</p>
-				</div>
 
-			</div>
+<div class="row">
+<div class="col-md-8 col-md-8 col-sm-12 col-md-offset-2 col-lg-offset-2 text-justify">
+<h2 class="page-header">How does it work?</h2>
+<div><img class="img-responsive" src="pipeline.png" alt="A schematic representation of the proposed motion transfer framework for image animation"/></div>
 
-			<div class="row">
-				
-                <div class="col-xs-12 col-md-8 col-md-8 col-sm-12 col-md-offset-2 col-lg-offset-2">
-					
-										<div class="col-lg-10 col-sm-10 col-md-10 col-xs-10">				
-						<img class="img-responsive" src="../images/cvpr-mmse.jpg" alt="poster"/>
-					</div>	
-				</div>
+<br/>
+    <p>For training, we employ a large collection of video sequences containing objects of the same object category. Our model is trained to reconstruct the training videos by combining a single frame and a learned latent representation of the motion in the video. Observing frame pairs (<i>source</i> and <i>driving</i>), each extracted from the same video, it learns to encode motion as a combination of motion-specific keypoint displacements and local affine transformations. At test time we apply our model to pairs composed of the source image and of each frame of the driving video and perform image animation of the source object.
+</p>
 
-			</div>
-			
-			
-			      <!-- Footer -->
-			<hr>
-			<footer>
-				<div class="row">
-					<div class="col-lg-12">
-						<p><a href="http://stulyakov.com">Sergey Tulyakov</a>, July 2016</p>
-					</div>
-				</div>
-			</footer>
-		
-    </body>
-	
+    <p>
+An overview of our approach is presented in Figure above. Our framework is composed of two main modules: the motion estimation module and the image generation module.
+The purpose of the motion estimation module is to predict a dense motion field. We assume there exists an abstract <i>reference</i> frame. And we independently estimate two transformations:
+    from <i>reference</i> to <i>source</i> and from <i>reference</i> to <i>driving</i>. This choice allows us to independently process <i>source</i> and <i>driving</i> frames.
+    This is desired since, at test time the model receives pairs of the source image and driving frames sampled from a different video, which can be very different visually.
+    </p>
 
-	
+    <p>
+        In the first step, we approximate both transformations from sets of sparse trajectories, obtained by using keypoints learned in a self-supervised way. We model motion in the neighbourhood of each keypoint using local affine transformations. Compared to using keypoint displacements only, the local affine transformations allow us to model a larger family of transformations.
+During the second step, a dense motion network combines the local approximations to obtain the resulting dense motion field. Furthermore, in addition to the dense motion field, this network outputs an occlusion mask that indicates which image parts of <i>driving</i> can be reconstructed by warping of the source image and which parts should be inpainted (inferred from the context).
+        Finally, the generation module renders an image of the <i>source</i> object moving as provided in the <i>driving</i> video. Here, we use a generator network that warps the source image according to dense motion and inpaints the image parts that are occluded in the source image.
+    </p>
+</div> </div>
+
+
+<div class="row">
+	<div class="col-xs-12 col-md-8 col-md-8 col-sm-12 col-md-offset-2 col-lg-offset-2">
+	<h2 class="page-header">Spotlight video</h2>
+        <!--
+		<div class="embed-responsive embed-responsive-16by9">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/YXgzCptZOKk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        	</div>
+        -->
+        Coming soon.
+	</div>
+
+</div>
+
+
+
+<div class="col-md-8 col-md-8 col-sm-12 col-md-offset-2 col-lg-offset-2 text-justify">
+<h2 class="page-header">Citation</h2>
+
+<pre>
+@InProceedings{Siarohin_2019_NeurIPS,
+  author={Siarohin, Aliaksandr and Lathuilière, Stéphane and Tulyakov, Sergey and Ricci, Elisa and Sebe, Nicu},
+  title={First Order Motion Model for Image Animation},
+  booktitle = {Conference on Neural Information Processing Systems (NeurIPS)},
+  month = {December},
+  year = {2019}
+}
+</pre>																
+
+</div>
+
+
+
+</div>
+
+</body>
 </html>
-
